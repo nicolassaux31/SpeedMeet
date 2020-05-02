@@ -6,7 +6,8 @@ LAYOUT
 ___________________________________
 A. GIT REPO SETUP
 B. FILE MANIPULATION
-C. REPOSITORY EXPLORATION
+C. VERSIONS TRACKING
+D. REPOSITORY EXPLORATION
 
 ___________________________
 A. GIT REPO SETUP
@@ -16,6 +17,14 @@ ___________________________
 
 Strat version tracking on the presetn dir
 
+---git config --global user.name "Nico Saux"
+Name that'll be shown when we commit stuff
+
+---git config --global user.email nicolassaux31@gmail.com
+Sets the email for remote repos
+
+---git config --global core.editor "vi"
+Configures the editor for commit logs
 ____________________________
 B. FILE MANIPULATION
 ____________________________
@@ -39,10 +48,18 @@ without removing it from the actual file system
 Moves a file from a place to another (in the actual filesystem too, not only about the tracking)
 Can also be used to simply rename a file
 
+___________________________
+C. VERSIONS TRACKING
+___________________________
+---git commit --amend
+Allows you to modify the last commit's message
+
+
 ____________________________
-C. REPOSITORY EXPLORATION
+D. REPOSITORY EXPLORATION
 ____________________________
 
 ---git log
 
 Shows the commits hystoric
+

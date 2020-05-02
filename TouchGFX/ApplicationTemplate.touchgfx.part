@@ -1,0 +1,20 @@
+
+{
+  "Application": {
+    "Name": "STM32F769I_DISCO",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "AvailableColorDepths": [ 24 ],
+    "AvailableLCDs":
+    {
+      "24": "LCD24bpp"
+    },
+    "AvailableResolutions" : [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../STM32F769I_DISCO.ioc --platform=m7"
+  },
+  "Version": "4.13.0"
+}

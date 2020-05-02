@@ -1,0 +1,48 @@
+COMMANDS ARE PRECEDED BY "---" HERE BUT DONT REQUIRE SUCH DASHES
+IN REAL GIT BASH
+
+__________________________________
+LAYOUT
+___________________________________
+A. GIT REPO SETUP
+B. FILE MANIPULATION
+C. REPOSITORY EXPLORATION
+
+___________________________
+A. GIT REPO SETUP
+___________________________
+
+---git init
+
+Strat version tracking on the presetn dir
+
+____________________________
+B. FILE MANIPULATION
+____________________________
+
+---git add
+
+Stages a file: adds a given file (whether it was untracked until then
+or modified since last commit) to the pile of things you'll want to be included
+in the next commit
+
+---git restore --staged <filename>
+
+Takes a file out of the stage (stage = pile of stuff we want to be present in the following
+commig). 
+
+---git rm --cached <filename>
+Very useful to take a file out of the version tracking
+without removing it from the actual file system
+
+---git mv <filepath1> <filepath2>
+Moves a file from a place to another (in the actual filesystem too, not only about the tracking)
+Can also be used to simply rename a file
+
+____________________________
+C. REPOSITORY EXPLORATION
+____________________________
+
+---git log
+
+Shows the commits hystoric

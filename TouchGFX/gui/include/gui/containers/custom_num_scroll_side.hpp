@@ -10,6 +10,8 @@ public:
     virtual ~custom_num_scroll_side() {}
 
     virtual void initialize();
+
+    void set_txt_num(uint16_t val);
 protected:
 };
 

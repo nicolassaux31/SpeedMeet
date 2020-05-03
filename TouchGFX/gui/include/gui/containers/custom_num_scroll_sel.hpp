@@ -10,6 +10,11 @@ public:
     virtual ~custom_num_scroll_sel() {}
 
     virtual void initialize();
+
+    virtual void set_txt_num(uint16_t val){
+    	Unicode::snprintf(txt_digitBuffer, TXT_DIGIT_SIZE, "%d", val);
+        txt_digit.invalidate();
+    }
 protected:
 };
 

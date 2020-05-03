@@ -24,18 +24,8 @@ public:
     	txt_slotname.setAlpha(alpha);
     }
 
-    virtual void set_txt_slotnum(int val){
-    	Unicode::snprintf(txt_slotnumBuffer, TXT_SLOTNUM_SIZE, "%d", val);
-    }
-
-    virtual void set_txt_slotname(string name){
-//    	int i;
-    	//Unicode::snprintf(txt_slotnameBuffer, TXT_SLOTNAME_SIZE, "%s", name.c_str());
-    	Unicode::strncpy(txt_slotnameBuffer, name.c_str(), TXT_SLOTNAME_SIZE);
-//    	for(i=0;i<TXT_SLOTNAME_SIZE;i++)
-//    		txt_slotnameBuffer[i] = name[i];
-//    	txt_slotnameBuffer[TXT_SLOTNAME_SIZE] = 0;
-    }
+    void set_txt_slotnum(int val);
+    void set_txt_slotname(string name);
 
 protected:
 };

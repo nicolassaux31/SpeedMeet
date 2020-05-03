@@ -17,6 +17,7 @@ public:
         modelListener = listener;
     }
 
+    //Global HMI Objects
     class slot
     {
     public:

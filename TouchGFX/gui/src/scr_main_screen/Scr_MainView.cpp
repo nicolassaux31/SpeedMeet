@@ -33,27 +33,6 @@ void Scr_MainView::setupScreen()
 	Unicode::snprintf(txt_sec0Buffer, TXT_SEC0_SIZE, "%d", slots[0].seconds % 10);
 	txt_sec0.invalidate();
 
-	//Initialize Slot Containers
-
-	custom_cnt_slot1.set_container_Alpha(255);
-	custom_cnt_slot1.set_txt_slotnum(1);
-	custom_cnt_slot1.set_txt_slotname(slots[0].name);
-	custom_cnt_slot1.invalidate();
-
-	custom_cnt_slot2.set_container_Alpha(80);
-	custom_cnt_slot2.set_txt_slotnum(2);
-	custom_cnt_slot2.set_txt_slotname(slots[1].name);
-	custom_cnt_slot2.invalidate();
-
-	custom_cnt_slot3.set_container_Alpha(80);
-	custom_cnt_slot3.set_txt_slotnum(3);
-	custom_cnt_slot3.set_txt_slotname(slots[2].name);
-	custom_cnt_slot3.invalidate();
-
-	custom_cnt_slot4.set_container_Alpha(80);
-	custom_cnt_slot4.set_txt_slotnum(4);
-	custom_cnt_slot4.set_txt_slotname(slots[3].name);
-	custom_cnt_slot4.invalidate();
 }
 
 void Scr_MainView::tearDownScreen()
